@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cristobal Olguin">
+    <meta name="description" content="WDD 231 Course Home Page for Cristobal Olguin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristobal Olguin | WDD 231</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Cristobal Olguin">
+        <span>Cristobal Olguin</span>
+    </header>
+
+    <nav>
+        <button id="menu-button">\u2630 Menu</button>
+        <ul id="menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+            <li><a href="https://github.com/CrisProgramming" target="_blank">GitHub Profile</a></li>
+            <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I am Cristobal Olguin, a programmer student . Welcome to my WDD 231 course home page!</p>
+        </section>
+
+        <section>
+            <h2>Certificate Courses</h2>
+            <div id="course-cards"></div>
+            <div>
+                <button onclick="filterCourses('all')">All</button>
+                <button onclick="filterCourses('WDD')">WDD</button>
+                <button onclick="filterCourses('CSE')">CSE</button>
+            </div>
+            <p>Total Credits: <span id="total-credits"></span></p>
+        </section>
+
+        <section>
+            <h2>Resources</h2>
+            <p>Here you'll find helpful resources for each project and assignment.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Cristobal Olguin, Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
