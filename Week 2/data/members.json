@@ -1,0 +1,26 @@
+[
+  {
+    "name": "GreenLeaf Market",
+    "address": "123 Elm Street",
+    "phone": "555-123-4567",
+    "website": "https://greenleafmarket.com",
+    "image": "greenleaf.png",
+    "membership": 3
+  },
+  {
+    "name": "Sunny Gym",
+    "address": "456 Oak Avenue",
+    "phone": "555-987-6543",
+    "website": "https://sunnygym.com",
+    "image": "sunnygym.png",
+    "membership": 2
+  },
+  {
+    "name": "Timbuktu Cafe",
+    "address": "789 Pine Road",
+    "phone": "555-456-7890",
+    "website": "https://timbuktucafe.com",
+    "image": "cafe.png",
+    "membership": 1
+  }
+]
