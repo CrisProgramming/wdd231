@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to the Orange County Chamber of Commerce. Connect, grow, and thrive." />
+  <meta name="description" content="The Orange County Chamber connects local businesses, supports growth, and strengthens our vibrant community." />
   <meta name="author" content="Cristobal Olguin" />
   <title>Orange County Chamber of Commerce</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="styles/base_index.css" />
-</head>
 
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Orange County Chamber of Commerce - Connect & Grow Locally" />
+  <meta property="og:description" content="Join the Orange County Chamber and discover networking events, business support, and opportunities to grow your impact." />
+  <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/hero_image.png" />
+  <meta property="og:url" content="https://yourusername.github.io/wdd231/chamber/" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Orange County Chamber Logo" class="logo" />
+    <img src="images/logo_final_web.png" alt="Orange County Chamber Logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -29,7 +34,7 @@
     <h1>Orange County Chamber of Commerce</h1>
 
     <section class="hero">
-      <img src="images/hero.png" alt="Orange County Scenery">
+      <img src="images/hero_image.png" alt="Orange County Scenery">
       <div class="hero-text">
         <h2>Welcome to Orange County!</h2>
         <a href="join.html" class="cta-button">Join the Chamber</a>
@@ -57,7 +62,7 @@
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Cristobal Olguin | WDD 231</p>
+    <p>&copy; <span id="year"></span> Elizabeth Hernandez | WDD 231</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
@@ -67,5 +72,4 @@
     document.getElementById("lastModified").textContent = document.lastModified;
   </script>
 </body>
-
 </html>
