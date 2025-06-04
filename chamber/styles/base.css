@@ -1,85 +1,77 @@
 :root {
-  --primary-color: #8dc591;
-  --secondary-color: #a5d6a7;
-  --background-color: #f1f8e9;
-  --text-color: #263238;
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-color: #205c3b;       /* Elegant dark green */
+  --secondary-color: #dff5ec;     /* Light mint background */
+  --text-color: #1a1a1a;          /* Near-black for text */
+  --accent-color: #4caf50;        /* Medium green accent */
+  --light: #ffffff;
 }
 
 body {
-  font-family: var(--font-family);
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
   margin: 0;
   padding: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
 
-header, footer {
+header,
+footer {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light);
   padding: 1rem;
-  text-align: center;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
+a {
+  color: var(--light);
+  text-decoration: underline;
 }
 
-nav ul li {
-  margin: 0 1rem;
+a:hover {
+  color: var(--accent-color);
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.logo {
-  max-width: 100px;
-  margin-bottom: 0.5rem;
-}
-
-.view-toggle {
-  text-align: center;
-  margin: 1rem 0;
-}
-
-button {
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  background-color: var(--secondary-color);
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
+input, textarea, select {
+  background-color: var(--light);
   color: var(--text-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem;
+  width: 100%;
 }
 
-.members.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+input::placeholder {
+  color: #555;
 }
 
-.members.list {
-  display: block;
-  padding: 1rem;
+button, input[type="submit"] {
+  background-color: var(--accent-color);
+  color: var(--light);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
 }
 
-.members article {
-  border: 1px solid #c8e6c9;
-  padding: 1rem;
-  background-color: white;
+button:hover,
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Membership cards */
+.card {
+  background-color: var(--light);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, opacity 0.8s ease;
 }
 
-.members article:hover {
+.card a {
+  color: var(--accent-color);
+}
+
+.card:hover {
   transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
