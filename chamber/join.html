@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Apply for membership in the Orange County Chamber of Commerce." />
   <meta name="author" content="Cristobal Olguin" />
   <title>Join the Chamber - Orange County</title>
-  <link rel="stylesheet" href="styles/base_index.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <meta property="og:title" content="Join the Chamber - Orange County Chamber of Commerce" />
+  <meta property="og:description"
+    content="Become a member of the Orange County Chamber of Commerce and connect with local business leaders." />
+  <meta property="og:image" content="images/logo_final_web.png" />
+  <meta property="og:url" content="https://crisprogramming.github.io/wdd231/chamber/join.html" />
+  <link rel="stylesheet" href="styles/base.css" />
   <script defer src="scripts/join.js"></script>
 </head>
+
 <body>
   <header>
     <img src="images/logo.png" alt="Orange County Chamber Logo" class="logo" />
@@ -33,11 +41,11 @@
       </label>
       <label>Title:
         <input type="text" name="title" title="Organization Title" autocomplete="organization-title"
-               pattern="[A-Za-z\-\s]{7,}">
+          pattern="[A-Za-z\-\s]{7,}">
       </label>
       <label>Email:
         <input type="email" name="email" title="Email Address" autocomplete="email" required
-               placeholder="you@example.com">
+          placeholder="you@example.com">
       </label>
       <label>Mobile:
         <input type="tel" name="phone" title="Mobile Number" autocomplete="tel" required>
@@ -67,10 +75,19 @@
       <div class="card" onclick="openModal('gold')">Gold Membership <a href="#">More Info</a></div>
     </section>
 
-    <dialog id="np"><p>No cost. For non-profits only. Includes basic directory listing.</p><button onclick="closeModal('np')">Close</button></dialog>
-    <dialog id="bronze"><p>Includes training invites and social media promotion.</p><button onclick="closeModal('bronze')">Close</button></dialog>
-    <dialog id="silver"><p>Includes event discounts, spotlights, and workshops.</p><button onclick="closeModal('silver')">Close</button></dialog>
-    <dialog id="gold"><p>All benefits including sponsorship opportunities.</p><button onclick="closeModal('gold')">Close</button></dialog>
+    <dialog id="np">
+      <p>No cost. For non-profits only. Includes basic directory listing.</p><button
+        onclick="closeModal('np')">Close</button>
+    </dialog>
+    <dialog id="bronze">
+      <p>Includes training invites and social media promotion.</p><button onclick="closeModal('bronze')">Close</button>
+    </dialog>
+    <dialog id="silver">
+      <p>Includes event discounts, spotlights, and workshops.</p><button onclick="closeModal('silver')">Close</button>
+    </dialog>
+    <dialog id="gold">
+      <p>All benefits including sponsorship opportunities.</p><button onclick="closeModal('gold')">Close</button>
+    </dialog>
   </main>
 
   <footer>
@@ -84,4 +101,5 @@
     document.getElementById("timestamp").value = new Date().toISOString();
   </script>
 </body>
+
 </html>
