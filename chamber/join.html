@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply for membership in the Orange County Chamber of Commerce." />
+  <meta name="author" content="Cristobal Olguin" />
+  <title>Join the Chamber - Orange County</title>
+  <link rel="stylesheet" href="styles/base_index.css" />
+  <script defer src="scripts/join.js"></script>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Orange County Chamber Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Orange County Chamber of Commerce</h1>
+    <form method="get" action="thankyou.html">
+      <label>First Name:
+        <input type="text" name="fname" title="First Name" autocomplete="given-name" required>
+      </label>
+      <label>Last Name:
+        <input type="text" name="lname" title="Last Name" autocomplete="family-name" required>
+      </label>
+      <label>Title:
+        <input type="text" name="title" title="Organization Title" autocomplete="organization-title"
+               pattern="[A-Za-z\-\s]{7,}">
+      </label>
+      <label>Email:
+        <input type="email" name="email" title="Email Address" autocomplete="email" required
+               placeholder="you@example.com">
+      </label>
+      <label>Mobile:
+        <input type="tel" name="phone" title="Mobile Number" autocomplete="tel" required>
+      </label>
+      <label>Business/Organization Name:
+        <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+      </label>
+      <label>Membership Level:
+        <select name="membership" title="Membership Level">
+          <option value="NP">NP Membership (Free)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>Business Description:
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp" />
+      <input type="submit" value="Apply for Membership">
+    </form>
+
+    <section class="membership-cards">
+      <div class="card" onclick="openModal('np')">NP Membership <a href="#">More Info</a></div>
+      <div class="card" onclick="openModal('bronze')">Bronze Membership <a href="#">More Info</a></div>
+      <div class="card" onclick="openModal('silver')">Silver Membership <a href="#">More Info</a></div>
+      <div class="card" onclick="openModal('gold')">Gold Membership <a href="#">More Info</a></div>
+    </section>
+
+    <dialog id="np"><p>No cost. For non-profits only. Includes basic directory listing.</p><button onclick="closeModal('np')">Close</button></dialog>
+    <dialog id="bronze"><p>Includes training invites and social media promotion.</p><button onclick="closeModal('bronze')">Close</button></dialog>
+    <dialog id="silver"><p>Includes event discounts, spotlights, and workshops.</p><button onclick="closeModal('silver')">Close</button></dialog>
+    <dialog id="gold"><p>All benefits including sponsorship opportunities.</p><button onclick="closeModal('gold')">Close</button></dialog>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Cristobal Olguin | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+    document.getElementById("timestamp").value = new Date().toISOString();
+  </script>
+</body>
+</html>
