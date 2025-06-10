@@ -1,0 +1,42 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffe4ec;
+  color: #222;
+  /* Dark text for general content */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #99003d;
+  /* Dark rose for strong contrast */
+}
+
+header,
+footer {
+  background-color: #ffb3c6;
+  /* Slightly darker pink */
+  color: #222;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+img {
+  border: 1px solid #ccc;
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+}
