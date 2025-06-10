@@ -1,8 +1,12 @@
 :root {
-  --primary-color: #205c3b;       /* Elegant dark green */
-  --secondary-color: #dff5ec;     /* Light mint background */
-  --text-color: #1a1a1a;          /* Near-black for text */
-  --accent-color: #4caf50;        /* Medium green accent */
+  --primary-color: #205c3b;
+  /* Elegant dark green */
+  --secondary-color: #dff5ec;
+  /* Light mint background */
+  --text-color: #1a1a1a;
+  /* Near-black for text */
+  --accent-color: #4caf50;
+  /* Medium green accent */
   --light: #ffffff;
 }
 
@@ -30,7 +34,9 @@ a:hover {
   color: var(--accent-color);
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   background-color: var(--light);
   color: var(--text-color);
   border: 1px solid var(--primary-color);
@@ -42,9 +48,11 @@ input::placeholder {
   color: #555;
 }
 
-button, input[type="submit"] {
-  background-color: var(--accent-color);
-  color: var(--light);
+button,
+input[type="submit"] {
+  background-color: #1E7A1E;
+  /* Darker green for AA contrast */
+  color: #ffffff;
   border: none;
   padding: 0.75rem 1.25rem;
   cursor: pointer;
@@ -52,7 +60,24 @@ button, input[type="submit"] {
 
 button:hover,
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #145c14;
+}
+
+/* CTA button accessibility fix */
+button.cta {
+  background-color: var(--primary-color);
+  color: var(--light);
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.cta:hover {
+  background-color: #15432c;
+  /* Slightly darker for hover */
 }
 
 /* Membership cards */
@@ -63,7 +88,7 @@ input[type="submit"]:hover {
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, opacity 0.8s ease;
 }
 
@@ -73,5 +98,25 @@ input[type="submit"]:hover {
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Accessible navigation links (fixes touch target issue) */
+nav a {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  /* Minimum 48px touch area */
+  margin: 0.25rem;
+  /* Space between links */
+  text-decoration: none;
+  color: var(--light);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--accent-color);
 }

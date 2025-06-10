@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Laguna Beach",
+        "address": "107 S Coast Hwy, Laguna Beach, CA",
+        "description": "A beautiful beach with scenic views, perfect for a relaxing day.",
+        "image": "laguna_beach.webp"
+    },
+    {
+        "name": "Irvine Spectrum Center",
+        "address": "670 Spectrum Center Dr, Irvine, CA",
+        "description": "A vibrant shopping center with a Ferris wheel and dining options.",
+        "image": "irvine_spectrum.webp"
+    },
+    {
+        "name": "Huntington Beach Pier",
+        "address": "Main St, Huntington Beach, CA",
+        "description": "A popular surfing destination with a long pier and beachside shops.",
+        "image": "huntington_pier.webp"
+    },
+    {
+        "name": "Orange County Great Park",
+        "address": "8000 Great Park Blvd, Irvine, CA",
+        "description": "A public park with a carousel, sports complex, and helium balloon ride.",
+        "image": "great_park.webp"
+    },
+    {
+        "name": "Bowers Museum",
+        "address": "2002 N Main St, Santa Ana, CA",
+        "description": "A world-class museum with exhibits on art and culture.",
+        "image": "bowers_museum.webp"
+    },
+    {
+        "name": "Balboa Island",
+        "address": "Balboa Island, Newport Beach, CA",
+        "description": "A charming harbor island with boutiques and ferry rides.",
+        "image": "balboa_island.webp"
+    },
+    {
+        "name": "Crystal Cove State Park",
+        "address": "8471 N Coast Hwy, Laguna Beach, CA",
+        "description": "A protected coastal park with hiking trails and tide pools.",
+        "image": "crystal_cove.webp"
+    },
+    {
+        "name": "Old Towne Orange",
+        "address": "Glassell St, Orange, CA",
+        "description": "Historic downtown with antique shops, cafes, and a central plaza.",
+        "image": "old_towne_orange.webp"
+    }
+]
