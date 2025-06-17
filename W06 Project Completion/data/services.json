@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "1:1 Coaching Session",
+    "summary": "Personalized transformational guidance.",
+    "description": "One-on-one coaching to address your unique emotional wounds and goals.",
+    "benefit": "Deep healing and personalized clarity.",
+    "symbol": "🌟"
+  },
+  {
+    "id": 2,
+    "title": "Inner Child Healing",
+    "summary": "Reconnect with your inner child.",
+    "description": "A session focused on healing childhood trauma and reclaiming joy.",
+    "benefit": "Restored innocence and self-love.",
+    "symbol": "🧸"
+  },
+  {
+    "id": 3,
+    "title": "Quantum Mind Shift",
+    "summary": "Transform your reality through thought.",
+    "description": "Neuroscience meets spirituality in this paradigm-shifting experience.",
+    "benefit": "Expanded consciousness and peace.",
+    "symbol": "🧠✨"
+  },
+  {
+    "id": 4,
+    "title": "Emotional Detox Program",
+    "summary": "Release stagnant emotional energy.",
+    "description": "Cleanse emotional blockages through guided awareness techniques.",
+    "benefit": "Lighter emotional body and increased clarity.",
+    "symbol": "💧"
+  },
+  {
+    "id": 5,
+    "title": "Self-Love Activation",
+    "summary": "Awaken the love within you.",
+    "description": "Guided meditative and affirmational session to nurture your worth.",
+    "benefit": "Increased confidence and inner harmony.",
+    "symbol": "❤️"
+  },
+  {
+    "id": 6,
+    "title": "Group Healing Workshop",
+    "summary": "Heal together, grow together.",
+    "description": "Experience collective energy and support in a live online workshop.",
+    "benefit": "Shared healing and empowerment.",
+    "symbol": "🤝"
+  },
+  {
+    "id": 7,
+    "title": "Trauma Release Session",
+    "summary": "Gently process emotional trauma.",
+    "description": "Safe space to release pain stored in the nervous system.",
+    "benefit": "Peace and nervous system regulation.",
+    "symbol": "🕊️"
+  },
+  {
+    "id": 8,
+    "title": "Spiritual Alignment Session",
+    "summary": "Connect with your soul.",
+    "description": "A session designed to align your spiritual, mental, and emotional self.",
+    "benefit": "Soul clarity and purpose.",
+    "symbol": "🔮"
+  },
+  {
+    "id": 9,
+    "title": "Energy Clearing",
+    "summary": "Cleanse your energetic field.",
+    "description": "Clear negative or stagnant energy from your body and space.",
+    "benefit": "Energetic balance and calm.",
+    "symbol": "🌀"
+  },
+  {
+    "id": 10,
+    "title": "Belief Rewiring",
+    "summary": "Break free from limiting beliefs.",
+    "description": "Identify and shift beliefs keeping you stuck.",
+    "benefit": "Empowered thinking and change.",
+    "symbol": "🔓"
+  },
+  {
+    "id": 11,
+    "title": "Affirmation Toolkit",
+    "summary": "Digital download of healing affirmations.",
+    "description": "A PDF with 30+ affirmations for daily alignment.",
+    "benefit": "Daily mindset support.",
+    "symbol": "📄💬"
+  },
+  {
+    "id": 12,
+    "title": "Daily Ritual Guide",
+    "summary": "Create your own healing routine.",
+    "description": "Morning and evening practices to anchor emotional peace.",
+    "benefit": "Routine, presence, and empowerment.",
+    "symbol": "📿"
+  },
+  {
+    "id": 13,
+    "title": "Emotional Support Bundle",
+    "summary": "Essential self-care tools.",
+    "description": "PDFs, guided meditations, and journal prompts.",
+    "benefit": "Ongoing healing support.",
+    "symbol": "🎧📝"
+  },
+  {
+    "id": 14,
+    "title": "Inner Voice Connection",
+    "summary": "Hear and trust your intuition.",
+    "description": "Strengthen your intuitive connection through guided exercises.",
+    "benefit": "Inner guidance and self-trust.",
+    "symbol": "🗣️🌈"
+  },
+  {
+    "id": 15,
+    "title": "Heart Opening Session",
+    "summary": "Release fear and open to love.",
+    "description": "Energy and emotional clearing to expand the heart chakra.",
+    "benefit": "Deeper love and connection.",
+    "symbol": "💓"
+  }
+]
